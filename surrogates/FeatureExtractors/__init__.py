@@ -1,13 +1,6 @@
-from .ClipL336 import ClipL336FeatureExtractor
 from .ClipB16 import ClipB16FeatureExtractor
 from .ClipB32 import ClipB32FeatureExtractor
 from .ClipLaion import ClipLaionFeatureExtractor
 from .InternVL3_1B import InternVL3_1B_FeatureExtractor
 from .DINOv2_Base import DINOv2FeatureExtractor
-# from .ClipLaionMultiligual import ClipLaionMultiligualFeatureExtractor
-# from .Blip import BlipFeatureExtractor
-# from .Blipcoco import BlipcocoFeatureExtractor
-# from .ViT import VisionTransformerFeatureExtractor
-# from .Base import EnsembleFeatureExtractor, EnsembleFeatureExtractor_ot,EnsembleFeatureExtractor_ot_atten,EnsembleFeatureLoss_OT_foa_attack,EnsembleFeatureLoss_OT_foa_atten_attack,EnsembleFeatureExtractor_ot_soft,EnsembleFeatureLoss_OT_foa_soft_attack,EnsembleFeatureLoss_OT_foa_attack_V2,EnsembleFeatureLoss_IM_OT_foa_attack,EnsembleFeatureLoss_MultiScaleOT
-# from .Base import EnsembleFeatureLoss_IM_OT_multilayer_foa_attack,
 from .Base import *

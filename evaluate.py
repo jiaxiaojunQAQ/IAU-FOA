@@ -219,7 +219,7 @@ def summarize(results):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--adv", help="directory of adversarial images (output of generate.py)")
+    parser.add_argument("--adv", help="directory of adversarial images (output of IAU_FOA.py)")
     parser.add_argument("--summary", metavar="DIR", help="only print the table for the results_*.json files in DIR")
     parser.add_argument("--targets", default="resources/images_100/target_images", help="directory of target images")
     parser.add_argument("--out", default=None, help="result directory (default: <adv>_eval)")

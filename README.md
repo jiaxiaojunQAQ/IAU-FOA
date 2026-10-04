@@ -96,10 +96,10 @@ attack process needs about 12 GB of GPU memory.
 
 ```bash
 # one image, to check the setup (about 15 minutes on an H100)
-python generate.py --config config/iau_foa_100.yaml data.num_samples=1 data.output=outputs/smoke
+python IAU_FOA.py --config config/iau_foa_100.yaml data.num_samples=1 data.output=outputs/smoke
 
 # the 100-image subset
-python generate.py --config config/iau_foa_100.yaml
+python IAU_FOA.py --config config/iau_foa_100.yaml
 
 # the full 1,000 images, one process per GPU
 scripts/run_sharded.sh config/iau_foa_1000.yaml 0 1 2 3
@@ -213,7 +213,7 @@ for `skip copy`.
 ## Repository layout
 
 ```
-generate.py              generate adversarial images
+IAU_FOA.py              generate adversarial images
 evaluate.py              evaluate on closed-source MLLMs
 config/                  attack configurations (100 and 1,000 images)
 iau_foa/

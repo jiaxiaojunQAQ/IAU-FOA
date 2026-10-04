@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate adversarial images.
 
-    python generate.py --config config/iau_foa_100.yaml [key=value ...]
+    python IAU_FOA.py --config config/iau_foa_100.yaml [key=value ...]
 
 Each clean image <clean_dir>/<class>/<name>.* is paired with the target image
 <target_dir>/**/<name>.* and written to <output>/<class>/<name>.png.

@@ -1,5 +1,5 @@
 import torch
-from transformers import AutoProcessor, AutoModelForImageTextToText, AutoTokenizer
+from transformers import AutoModelForImageTextToText
 from torchvision import transforms
 
 from .Base import BaseFeatureExtractor
@@ -22,12 +22,10 @@ class InternVL3_1B_FeatureExtractor(BaseFeatureExtractor):
                 ),
             ]
         )
-        self.processor = AutoProcessor.from_pretrained("OpenGVLab/InternVL3-1B-hf")
         # transformers 5.x renamed torch_dtype -> dtype.
         self.model = AutoModelForImageTextToText.from_pretrained(
             "OpenGVLab/InternVL3-1B-hf", dtype=torch.bfloat16
         )
-        self.tokenizer = AutoTokenizer.from_pretrained("OpenGVLab/InternVL3-1B-hf")
 
     def forward(self, x):
         pixel_values = self.normalizer(x).to(self.model.device, dtype=torch.bfloat16)

@@ -1,5 +1,5 @@
 import torch
-from transformers import AutoImageProcessor, AutoModel
+from transformers import AutoModel
 from torchvision import transforms
 
 from .Base import BaseFeatureExtractor
@@ -9,7 +9,6 @@ class DINOv2FeatureExtractor(BaseFeatureExtractor):
     def __init__(self):
         super(DINOv2FeatureExtractor, self).__init__()
         self.model = AutoModel.from_pretrained("facebook/dinov2-base")
-        self.processor = AutoImageProcessor.from_pretrained("facebook/dinov2-base")
         self.normalizer = transforms.Compose(
             [
                 transforms.Resize(
