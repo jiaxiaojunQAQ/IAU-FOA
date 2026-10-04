@@ -1,0 +1,32 @@
+# IAU-FOA, full 1000-image NIPS 2017 adversarial competition set.
+seed: 2023
+
+data:
+  clean_dir: resources/images/bigscale        # <clean_dir>/<class>/<name>.png
+  target_dir: resources/images/target_images  # target image with the same <name>
+  output: outputs/iau_foa_1000
+  num_samples: 1000
+  num_shards: 1       # split the image set over several processes / GPUs
+  shard_id: 0         # this process handles images with index % num_shards == shard_id
+
+attack:
+  epsilon: 16         # L_inf budget, pixel scale [0, 255]
+  alpha: 1.0          # step size
+  steps: 300
+
+model:
+  device: cuda:0
+  input_res: 224
+  crop_scale: [0.5, 0.9]   # area range of the random crops of the source and target views
+  surrogates: [B16, B32, Laion, InternVL3_1B, DINOv2_Base]
+
+ot:
+  num_centers: 10     # K: K-Means centres of the patch tokens per image
+  local_weight: 2.0   # lambda: weight of the local OT term
+  rho: 0.2            # marginal relaxation of the unbalanced OT
+  gamma: 1.0          # strength of the confidence-adaptive relaxation (0 = plain UOT)
+  eps: 0.1            # entropic temperature
+
+via:
+  num_scales: 5       # bidirectional intensity scales {1/4, 1/2, 1, 2, 4}
+  wb_spread: 0.5      # per-channel gain in [1 - wb_spread, 1 + wb_spread]

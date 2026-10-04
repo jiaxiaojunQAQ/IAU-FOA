@@ -1,0 +1,1002 @@
+[
+  {
+    "name": "nips17/0",
+    "adv_path": "final_results/adv_100/nips17/0.png",
+    "target_path": "resources/images_100/target_images/1/0.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A black-and-white dog enjoys being petted in warm sunlight.",
+    "adv_description": "A black and white dog chews a toy while resting on someone’s lap.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/1",
+    "adv_path": "final_results/adv_100/nips17/1.png",
+    "target_path": "resources/images_100/target_images/1/1.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Backcountry skiers with large backpacks pause on a snowy forest trail.",
+    "adv_description": "Skiers traverse a snowy forest path beside a reflective icy river under bright winter light.",
+    "similarity": 0.7,
+    "success": true
+  },
+  {
+    "name": "nips17/10",
+    "adv_path": "final_results/adv_100/nips17/10.png",
+    "target_path": "resources/images_100/target_images/1/10.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Small boats rest in a lakeside harbor beneath trees, blue sky, and distant mountains.",
+    "adv_description": "Colorful boats are moored along a narrow canal beneath hanging fabrics and ropes.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/11",
+    "adv_path": "final_results/adv_100/nips17/11.png",
+    "target_path": "resources/images_100/target_images/1/11.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A train travels through a narrow rocky cutting toward a tunnel.",
+    "adv_description": "A vibrant red steam train travels through a narrow rocky tunnel with lush green surroundings.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/12",
+    "adv_path": "final_results/adv_100/nips17/12.png",
+    "target_path": "resources/images_100/target_images/1/12.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Two white carriage horses wear red feather plumes on a city street.",
+    "adv_description": "Three harnessed horses stand closely together in a stable-like setting.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/13",
+    "adv_path": "final_results/adv_100/nips17/13.png",
+    "target_path": "resources/images_100/target_images/1/13.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A person slices a glazed bundt cake on a glass serving platter.",
+    "adv_description": "A glazed bundt cake sits on a glass platter, partially covered, with a knife nearby.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/14",
+    "adv_path": "final_results/adv_100/nips17/14.png",
+    "target_path": "resources/images_100/target_images/1/14.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A cowboy rides a dark horse down a sunny city street while pedestrians watch.",
+    "adv_description": "A horse-drawn carriage with a driver passes in front of a city building.",
+    "similarity": 0.4,
+    "success": false
+  },
+  {
+    "name": "nips17/15",
+    "adv_path": "final_results/adv_100/nips17/15.png",
+    "target_path": "resources/images_100/target_images/1/15.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A bearded man in medieval attire stands outdoors, talking on a cellphone at a reenactment.",
+    "adv_description": "A medieval-looking man in a hooded cloak stands before people gathered around a table.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/16",
+    "adv_path": "final_results/adv_100/nips17/16.png",
+    "target_path": "resources/images_100/target_images/1/16.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A woven basket holds oranges and lemons in a close-up, colorful fruit arrangement.",
+    "adv_description": "A basket of citrus fruits sits behind a translucent, textured curtain in soft light.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/17",
+    "adv_path": "final_results/adv_100/nips17/17.png",
+    "target_path": "resources/images_100/target_images/1/17.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A young baseball player poses with a bat on a grassy field.",
+    "adv_description": "A baseball player bends forward on a grassy field, clutching his glove during play.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/18",
+    "adv_path": "final_results/adv_100/nips17/18.png",
+    "target_path": "resources/images_100/target_images/1/18.jpg",
+    "model": "gpt-5.5",
+    "target_description": "People gather around a decorated birthday cake on a party table.",
+    "adv_description": "A family celebrates outdoors around a picnic table with a cake and colorful party decorations.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/19",
+    "adv_path": "final_results/adv_100/nips17/19.png",
+    "target_path": "resources/images_100/target_images/1/19.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A man in glasses and a plaid shirt holds oversized scissors indoors.",
+    "adv_description": "Smiling man in a plaid shirt poses with skis beside an American flag in a shop.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/2",
+    "adv_path": "final_results/adv_100/nips17/2.png",
+    "target_path": "resources/images_100/target_images/1/2.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A bearded man sleeps under blankets with two cats resting nearby on the bed.",
+    "adv_description": "A man sleeps under blankets in bed with a cat curled beside him.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/20",
+    "adv_path": "final_results/adv_100/nips17/20.png",
+    "target_path": "resources/images_100/target_images/1/20.jpg",
+    "model": "gpt-5.5",
+    "target_description": "An orange kitten stands on a toilet seat, peering curiously into the bowl.",
+    "adv_description": "An orange kitten curiously peers into an open toilet bowl.",
+    "similarity": 1.0,
+    "success": true
+  },
+  {
+    "name": "nips17/21",
+    "adv_path": "final_results/adv_100/nips17/21.png",
+    "target_path": "resources/images_100/target_images/1/21.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Black pigs rest and forage in lush green grass under dappled shade.",
+    "adv_description": "Sheep graze in a sunlit field near hay bales, with a rainbow-like lens flare across the scene.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/22",
+    "adv_path": "final_results/adv_100/nips17/22.png",
+    "target_path": "resources/images_100/target_images/1/22.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Two kayaks rest on a sandy shore beside calm, rippling water.",
+    "adv_description": "Two colorful kayaks rest on a sandy shoreline beside calm water.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/23",
+    "adv_path": "final_results/adv_100/nips17/23.png",
+    "target_path": "resources/images_100/target_images/1/23.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Cheesy toast, wine, a folding knife, pipe, tobacco, and books sit on a wooden table.",
+    "adv_description": "A surreal tabletop scene features giant toast, knives, bottles, plants, and assorted packaged items.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/24",
+    "adv_path": "final_results/adv_100/nips17/24.png",
+    "target_path": "resources/images_100/target_images/1/24.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Sewing and craft tools lie on a green cutting mat.",
+    "adv_description": "Vintage sewing and leatherworking tools lie on a green cutting mat.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/25",
+    "adv_path": "final_results/adv_100/nips17/25.png",
+    "target_path": "resources/images_100/target_images/1/25.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Children gather around coaches during a youth soccer practice on a grassy field.",
+    "adv_description": "Children and adults gather near a soccer ball at a fenced outdoor park.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/26",
+    "adv_path": "final_results/adv_100/nips17/26.png",
+    "target_path": "resources/images_100/target_images/1/26.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Ripe bananas are piled in wooden crates at an outdoor market.",
+    "adv_description": "A sunlit market stall displays bunches of bananas beside a leafy outdoor path.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/27",
+    "adv_path": "final_results/adv_100/nips17/27.png",
+    "target_path": "resources/images_100/target_images/1/27.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Two teddy bears with blue ribbons sit together on a bright red background.",
+    "adv_description": "Several stuffed bears sit together on a sunlit bench outdoors.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/28",
+    "adv_path": "final_results/adv_100/nips17/28.png",
+    "target_path": "resources/images_100/target_images/1/28.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A baby in overalls chews on a toothbrush while sitting on a green chair.",
+    "adv_description": "A baby in overalls sits with two toothbrushes, one in the mouth, under a blue tint.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/29",
+    "adv_path": "final_results/adv_100/nips17/29.png",
+    "target_path": "resources/images_100/target_images/1/29.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Elephants stand in a dusty forest clearing at Wasgamuwa National Park.",
+    "adv_description": "Elephants emerge through misty jungle foliage in a dreamy wildlife collage.",
+    "similarity": 0.7,
+    "success": true
+  },
+  {
+    "name": "nips17/3",
+    "adv_path": "final_results/adv_100/nips17/3.png",
+    "target_path": "resources/images_100/target_images/1/3.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Rusty scissors are wedged into old metal machinery amid lush green garden plants.",
+    "adv_description": "A rusty garden sprayer and scissors lie on weathered corrugated metal amid leaves and twigs.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/30",
+    "adv_path": "final_results/adv_100/nips17/30.png",
+    "target_path": "resources/images_100/target_images/1/30.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A surfer rides a large curling wave in black and white.",
+    "adv_description": "A surfer rides inside a curling wave, surrounded by golden spray.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/31",
+    "adv_path": "final_results/adv_100/nips17/31.png",
+    "target_path": "resources/images_100/target_images/1/31.jpg",
+    "model": "gpt-5.5",
+    "target_description": "An ornate Pied Bull Yard street clock with Roman numerals and small figurines decorates a building facade.",
+    "adv_description": "A vintage pub sign with an ornate clock hangs in bright, hazy sunlight.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/32",
+    "adv_path": "final_results/adv_100/nips17/32.png",
+    "target_path": "resources/images_100/target_images/1/32.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A busy neon-lit Hong Kong street with traffic, shop signs, and a man in the foreground.",
+    "adv_description": "A bustling urban street with layered neon signs and shopfronts amid tall buildings.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/33",
+    "adv_path": "final_results/adv_100/nips17/33.png",
+    "target_path": "resources/images_100/target_images/1/33.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A smiling performer wears a colorful costume adorned with bananas and a banana headdress.",
+    "adv_description": "A smiling parade performer in a vibrant feathered costume poses amid other dancers on a city street.",
+    "similarity": 0.7,
+    "success": true
+  },
+  {
+    "name": "nips17/34",
+    "adv_path": "final_results/adv_100/nips17/34.png",
+    "target_path": "resources/images_100/target_images/1/34.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A decorative white porcelain vase with a painted bird and flowers sits on a sunny windowsill.",
+    "adv_description": "Ornate porcelain vases with floral and bird designs sit on a sunlit table.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/35",
+    "adv_path": "final_results/adv_100/nips17/35.png",
+    "target_path": "resources/images_100/target_images/1/35.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Framed still life painting of a brass pitcher, oranges, candleholder, and dish on a table.",
+    "adv_description": "Blue-toned still life with glassware, fruit, and a pitcher on a table.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/36",
+    "adv_path": "final_results/adv_100/nips17/36.png",
+    "target_path": "resources/images_100/target_images/1/36.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A blackbird pecks at a discarded apple in a terracotta garden planter.",
+    "adv_description": "A blackbird stands among mossy garden pots, fallen leaves, and a watering can.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/37",
+    "adv_path": "final_results/adv_100/nips17/37.png",
+    "target_path": "resources/images_100/target_images/1/37.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A bustling floating market with many boats crowded along a busy river under a clear sky.",
+    "adv_description": "Crowded boats navigate a bustling river market under a bright sky.",
+    "similarity": 1.0,
+    "success": true
+  },
+  {
+    "name": "nips17/38",
+    "adv_path": "final_results/adv_100/nips17/38.png",
+    "target_path": "resources/images_100/target_images/1/38.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A vintage passenger train winds through a lush mountain forest as passengers wave from the rear platform.",
+    "adv_description": "A crowd gathers around a blue miniature train ride in a lush outdoor park.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/39",
+    "adv_path": "final_results/adv_100/nips17/39.png",
+    "target_path": "resources/images_100/target_images/1/39.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A moored boat sits in a sunlit harbor beside colorful waterfront buildings.",
+    "adv_description": "An old canal boat is moored beside brick buildings on a quiet waterside.",
+    "similarity": 0.7,
+    "success": true
+  },
+  {
+    "name": "nips17/4",
+    "adv_path": "final_results/adv_100/nips17/4.png",
+    "target_path": "resources/images_100/target_images/1/4.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A tabby cat sits behind a wooden chair beside a table in a cozy room.",
+    "adv_description": "A tabby cat sits on a chair amid colorful, patterned furniture.",
+    "similarity": 0.7,
+    "success": true
+  },
+  {
+    "name": "nips17/40",
+    "adv_path": "final_results/adv_100/nips17/40.png",
+    "target_path": "resources/images_100/target_images/1/40.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Zebras and a wildebeest graze on savanna near a lake filled with flamingos.",
+    "adv_description": "Zebras graze on a lakeside savanna under a dramatic orange sunset sky.",
+    "similarity": 0.7,
+    "success": true
+  },
+  {
+    "name": "nips17/41",
+    "adv_path": "final_results/adv_100/nips17/41.png",
+    "target_path": "resources/images_100/target_images/1/41.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A cozy room with floral curtains, a chaise lounge, bookshelf, and TV showing a football game.",
+    "adv_description": "A small CRT TV sits on a table behind sheer patterned floral curtains.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/42",
+    "adv_path": "final_results/adv_100/nips17/42.png",
+    "target_path": "resources/images_100/target_images/1/42.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A man cycles along a sunlit path beside a passing red-and-white train.",
+    "adv_description": "A commuter train travels along tracks past buildings on a bright, hazy day.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/43",
+    "adv_path": "final_results/adv_100/nips17/43.png",
+    "target_path": "resources/images_100/target_images/1/43.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A young girl holds a slice of pepperoni pizza while looking to the side.",
+    "adv_description": "A young child with braided hair eats a slice of pizza outdoors.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/44",
+    "adv_path": "final_results/adv_100/nips17/44.png",
+    "target_path": "resources/images_100/target_images/1/44.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Three giraffes stand near a wooden gate and stone wall in a zoo enclosure.",
+    "adv_description": "Three giraffes stand together in a fenced enclosure, with two gently touching necks.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/45",
+    "adv_path": "final_results/adv_100/nips17/45.png",
+    "target_path": "resources/images_100/target_images/1/45.jpg",
+    "model": "gpt-5.5",
+    "target_description": "An antique four-poster bed with draped canopy stands in a dark wood-paneled bedroom.",
+    "adv_description": "A vintage green bedroom features twin beds and an ornate canopy bed frame.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/46",
+    "adv_path": "final_results/adv_100/nips17/46.png",
+    "target_path": "resources/images_100/target_images/1/46.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A dining table is set with plates, wine, soup, bread, and cooked vegetables.",
+    "adv_description": "A monarch butterfly rests on a cluttered dinner table set with food, glasses, and plates.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/47",
+    "adv_path": "final_results/adv_100/nips17/47.png",
+    "target_path": "resources/images_100/target_images/1/47.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A woman wearing sunglasses sits in a small boat on a sunny lake.",
+    "adv_description": "A fisherman pulls a net aboard a small boat on the water.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/48",
+    "adv_path": "final_results/adv_100/nips17/48.png",
+    "target_path": "resources/images_100/target_images/1/48.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Two giraffes browse among trees and dry grass in a savanna landscape.",
+    "adv_description": "Two giraffes stand among sunlit, dry shrubs in a hazy savanna landscape.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/49",
+    "adv_path": "final_results/adv_100/nips17/49.png",
+    "target_path": "resources/images_100/target_images/1/49.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A costumed man leads a white horse through misty snow under blue theatrical lighting.",
+    "adv_description": "A robed traveler stands beside a horse within an ornate, mystical circular pattern.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/5",
+    "adv_path": "final_results/adv_100/nips17/5.png",
+    "target_path": "resources/images_100/target_images/1/5.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A table displays assorted donuts and pastries on paper wrappers in front of a seated person.",
+    "adv_description": "A bakery display shows assorted pastries and donuts on blue trays under bright sunlight.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/50",
+    "adv_path": "final_results/adv_100/nips17/50.png",
+    "target_path": "resources/images_100/target_images/1/50.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Grilled salmon with broccoli and a cheesy side on a white plate.",
+    "adv_description": "A cooked fish head rests on a bed of bright green broccoli.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/51",
+    "adv_path": "final_results/adv_100/nips17/51.png",
+    "target_path": "resources/images_100/target_images/1/51.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A beige teddy bear with a brown bow sits against a white lace background.",
+    "adv_description": "A plush teddy bear sits on a bed beside an illustrated teddy bear book.",
+    "similarity": 0.7,
+    "success": true
+  },
+  {
+    "name": "nips17/52",
+    "adv_path": "final_results/adv_100/nips17/52.png",
+    "target_path": "resources/images_100/target_images/1/52.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A decorated fire truck carries Santa and festive characters in a nighttime holiday parade.",
+    "adv_description": "A fire truck decorated for a Christmas parade drives past in a faded, layered photo.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/53",
+    "adv_path": "final_results/adv_100/nips17/53.png",
+    "target_path": "resources/images_100/target_images/1/53.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A chocolate-coated donut with red crumble topping sits beside a cup of coffee.",
+    "adv_description": "Two berry-topped donuts sit beside a coffee cup on a sunlit newspaper by the window.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/54",
+    "adv_path": "final_results/adv_100/nips17/54.png",
+    "target_path": "resources/images_100/target_images/1/54.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A flock of sheep grazes in a dry, grassy field.",
+    "adv_description": "Sheep graze beside a rusty railcar while people tend the pasture.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/55",
+    "adv_path": "final_results/adv_100/nips17/55.png",
+    "target_path": "resources/images_100/target_images/1/55.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A zebra stands in snowy ground near a stone wall and wooden fence.",
+    "adv_description": "A zebra stands in a sandy zoo enclosure beside a textured concrete wall.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/56",
+    "adv_path": "final_results/adv_100/nips17/56.png",
+    "target_path": "resources/images_100/target_images/1/56.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Two elephants walk beneath acacia trees in a grassy African savanna.",
+    "adv_description": "Elephants stand together in a grassy savanna beneath sparse trees.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/57",
+    "adv_path": "final_results/adv_100/nips17/57.png",
+    "target_path": "resources/images_100/target_images/1/57.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Elephants wearing “I ♥ NY” blankets parade across a city crosswalk at night.",
+    "adv_description": "Mounted police ride horses past a crowd on a city street lined with storefronts.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/58",
+    "adv_path": "final_results/adv_100/nips17/58.png",
+    "target_path": "resources/images_100/target_images/1/58.jpg",
+    "model": "gpt-5.5",
+    "target_description": "An orange-clad soccer player takes a free kick toward a defensive wall of players in white.",
+    "adv_description": "A soccer player in orange performs a bicycle kick while opponents watch on the field.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/59",
+    "adv_path": "final_results/adv_100/nips17/59.png",
+    "target_path": "resources/images_100/target_images/1/59.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Close-up of rotini pasta mixed with fresh broccoli in a purple colander.",
+    "adv_description": "Green caterpillars crawl over broccoli florets inside a plastic container.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/6",
+    "adv_path": "final_results/adv_100/nips17/6.png",
+    "target_path": "resources/images_100/target_images/1/6.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A mahout guides an elephant carrying two children through lush jungle foliage.",
+    "adv_description": "Two people ride an elephant through lush tropical forest.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/60",
+    "adv_path": "final_results/adv_100/nips17/60.png",
+    "target_path": "resources/images_100/target_images/1/60.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A stop sign stands beneath street signs amid vibrant red autumn foliage.",
+    "adv_description": "Weathered wooden signpost with autumn foliage and a stop sign in the background.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/61",
+    "adv_path": "final_results/adv_100/nips17/61.png",
+    "target_path": "resources/images_100/target_images/1/61.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A black-and-white zebra grazes in tall grass, its striped head lowered close to the ground.",
+    "adv_description": "Several zebras stand and graze among dry grass in a sunlit enclosure.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/62",
+    "adv_path": "final_results/adv_100/nips17/62.png",
+    "target_path": "resources/images_100/target_images/1/62.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Elephants walk through dense, vibrant green forest foliage.",
+    "adv_description": "A dark elephant stands partially hidden among dense, colorful forest foliage.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/63",
+    "adv_path": "final_results/adv_100/nips17/63.png",
+    "target_path": "resources/images_100/target_images/1/63.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A smiling woman and child pose with bright turquoise luggage outside a building.",
+    "adv_description": "Two people sit on a bench with colorful bags and suitcases on a city sidewalk.",
+    "similarity": 0.7,
+    "success": true
+  },
+  {
+    "name": "nips17/64",
+    "adv_path": "final_results/adv_100/nips17/64.png",
+    "target_path": "resources/images_100/target_images/1/64.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A red twin-engine propeller plane sits on a runway at sunset.",
+    "adv_description": "A small airplane in a dim hangar is overlaid with tall burning candles.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/65",
+    "adv_path": "final_results/adv_100/nips17/65.png",
+    "target_path": "resources/images_100/target_images/1/65.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A woman in a floral crown gently pets a horse on a cloudy beach.",
+    "adv_description": "A woman in a floral crown embraces a horse amid tall grass and greenery.",
+    "similarity": 0.7,
+    "success": true
+  },
+  {
+    "name": "nips17/66",
+    "adv_path": "final_results/adv_100/nips17/66.png",
+    "target_path": "resources/images_100/target_images/1/66.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A plane flies overhead above leafy treetops against a pale green sky.",
+    "adv_description": "A stylized airplane nose emerges through a hazy, double-exposed sky.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/67",
+    "adv_path": "final_results/adv_100/nips17/67.png",
+    "target_path": "resources/images_100/target_images/1/67.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A woman watches doughnuts moving along a conveyor behind a glass bakery window.",
+    "adv_description": "Bagels move along a conveyor inside an industrial bakery production line.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/68",
+    "adv_path": "final_results/adv_100/nips17/68.png",
+    "target_path": "resources/images_100/target_images/1/68.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A herd of zebras gathers in a dry savanna clearing near sparse trees.",
+    "adv_description": "A small herd of zebras grazes among dry grass and trees in a sunlit savanna.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/69",
+    "adv_path": "final_results/adv_100/nips17/69.png",
+    "target_path": "resources/images_100/target_images/1/69.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A youth baseball player swings at a pitch during a game as the catcher and umpire watch.",
+    "adv_description": "A surreal double-exposure image blends a youth baseball game with a close-up of a batter.",
+    "similarity": 1.0,
+    "success": true
+  },
+  {
+    "name": "nips17/7",
+    "adv_path": "final_results/adv_100/nips17/7.png",
+    "target_path": "resources/images_100/target_images/1/7.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A narrow cobblestone street leads to a church tower framed by colorful old buildings.",
+    "adv_description": "A narrow street features balconies and a large trompe-l'œil mural of a clock tower.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/70",
+    "adv_path": "final_results/adv_100/nips17/70.png",
+    "target_path": "resources/images_100/target_images/1/70.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A soccer goalkeeper jogs across the field holding gloves during practice.",
+    "adv_description": "A man plays tennis at night, striking the ball across a brightly lit net.",
+    "similarity": 0.0,
+    "success": false
+  },
+  {
+    "name": "nips17/71",
+    "adv_path": "final_results/adv_100/nips17/71.png",
+    "target_path": "resources/images_100/target_images/1/71.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A dog runs across grass carrying a purple frisbee in its mouth.",
+    "adv_description": "A dog carries a blue inflatable pool while another dog runs behind in the yard.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/72",
+    "adv_path": "final_results/adv_100/nips17/72.png",
+    "target_path": "resources/images_100/target_images/1/72.jpg",
+    "model": "gpt-5.5",
+    "target_description": "An elderly couple sits on a park bench with a large white dog beside them.",
+    "adv_description": "Two people sit in a shaded park while two dogs lounge nearby.",
+    "similarity": 0.6,
+    "success": true
+  },
+  {
+    "name": "nips17/73",
+    "adv_path": "final_results/adv_100/nips17/73.png",
+    "target_path": "resources/images_100/target_images/1/73.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A person rides a jet ski across choppy water, leaving a large spray behind.",
+    "adv_description": "A surreal scene shows a person wakeboarding beside an oversized foot on choppy water.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/74",
+    "adv_path": "final_results/adv_100/nips17/74.png",
+    "target_path": "resources/images_100/target_images/1/74.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A man swings a glowing bat, creating dramatic red light trails in the dark.",
+    "adv_description": "A colorful, distorted image shows a person fishing amid bright splashes and swirling water.",
+    "similarity": 0.2,
+    "success": false
+  },
+  {
+    "name": "nips17/75",
+    "adv_path": "final_results/adv_100/nips17/75.png",
+    "target_path": "resources/images_100/target_images/1/75.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Cars wait at a crossing as a silver train passes through an electrified rail area.",
+    "adv_description": "A snowy urban interchange shows cars and a sleek train moving through layered bridges and rail lines.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/76",
+    "adv_path": "final_results/adv_100/nips17/76.png",
+    "target_path": "resources/images_100/target_images/1/76.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A gray-haired man holds a wine glass in a warmly lit shop lined with packaged goods.",
+    "adv_description": "A person in a patterned shirt holds a wine glass amid layered text and reflections.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/77",
+    "adv_path": "final_results/adv_100/nips17/77.png",
+    "target_path": "resources/images_100/target_images/1/77.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A person gently pets sheep in a hay-covered enclosure.",
+    "adv_description": "A person examines a sheep while a child watches in a hay-filled barn.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/78",
+    "adv_path": "final_results/adv_100/nips17/78.png",
+    "target_path": "resources/images_100/target_images/1/78.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Two ducks swim in a shallow, reflective pond surrounded by trees.",
+    "adv_description": "A duck swims on reflective water, creating a colorful mirrored silhouette beneath it.",
+    "similarity": 0.7,
+    "success": true
+  },
+  {
+    "name": "nips17/79",
+    "adv_path": "final_results/adv_100/nips17/79.png",
+    "target_path": "resources/images_100/target_images/1/79.jpg",
+    "model": "gpt-5.5",
+    "target_description": "An elephant stands in a lush green savanna surrounded by trees.",
+    "adv_description": "A dreamy layered scene shows elephants grazing and walking across a misty, green landscape.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/8",
+    "adv_path": "final_results/adv_100/nips17/8.png",
+    "target_path": "resources/images_100/target_images/1/8.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A bustling outdoor market street displays abundant fresh fruits and vegetables under sunny skies.",
+    "adv_description": "A green-tinted market stall displays pears and other produce with vendors and shoppers behind.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/80",
+    "adv_path": "final_results/adv_100/nips17/80.png",
+    "target_path": "resources/images_100/target_images/1/80.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Two pink and black tennis rackets overlap on a textured surface.",
+    "adv_description": "Two vintage wooden tennis rackets lie on a patterned surface beside a woven strap.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/81",
+    "adv_path": "final_results/adv_100/nips17/81.png",
+    "target_path": "resources/images_100/target_images/1/81.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A ski racer carves sharply through a snowy slalom course, kicking up powder.",
+    "adv_description": "A skier carves sharply down a snowy slope, kicking up a spray of powder.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/82",
+    "adv_path": "final_results/adv_100/nips17/82.png",
+    "target_path": "resources/images_100/target_images/1/82.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Cyclists ride in a protected green bike lane on a city street beside a Burger King.",
+    "adv_description": "Cyclists ride along a green bike lane on a city street with storefronts and tall buildings.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/83",
+    "adv_path": "final_results/adv_100/nips17/83.png",
+    "target_path": "resources/images_100/target_images/1/83.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Two Canada geese swim peacefully across a greenish pond.",
+    "adv_description": "Canada geese swim on a reflective pond with colorful sunset reflections in the water.",
+    "similarity": 0.7,
+    "success": true
+  },
+  {
+    "name": "nips17/84",
+    "adv_path": "final_results/adv_100/nips17/84.png",
+    "target_path": "resources/images_100/target_images/1/84.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A weathered blue Conrail caboose sits on railroad tracks under a clear sky.",
+    "adv_description": "A rusty train car sits on a plate beneath a ghostly superimposed face.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/85",
+    "adv_path": "final_results/adv_100/nips17/85.png",
+    "target_path": "resources/images_100/target_images/1/85.jpg",
+    "model": "gpt-5.5",
+    "target_description": "An elephant walks through dense green forest vegetation among tall trees.",
+    "adv_description": "An elephant stands in dense greenery behind reddish tree branches in a forest.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/86",
+    "adv_path": "final_results/adv_100/nips17/86.png",
+    "target_path": "resources/images_100/target_images/1/86.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Two crowned cranes stand inside a fenced enclosure with grass and wooden posts.",
+    "adv_description": "Two crowned cranes stand in a fenced enclosure, with one partially visible behind a mesh barrier.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/87",
+    "adv_path": "final_results/adv_100/nips17/87.png",
+    "target_path": "resources/images_100/target_images/1/87.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A large red stop sign stands beside a quiet suburban road.",
+    "adv_description": "A hazy street scene with overlapping stop signs, trees, power lines, and traffic lights.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/88",
+    "adv_path": "final_results/adv_100/nips17/88.png",
+    "target_path": "resources/images_100/target_images/1/88.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Sheep and lambs stand in a sunny green pasture with more sheep grazing in the background.",
+    "adv_description": "Sheep graze behind a fence in a snowy, surreal split-image landscape.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/89",
+    "adv_path": "final_results/adv_100/nips17/89.png",
+    "target_path": "resources/images_100/target_images/1/89.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A brown horse stands among dense green trees in a forest.",
+    "adv_description": "A collage shows a forest scene alongside horses grazing and drinking near a rural stream.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/9",
+    "adv_path": "final_results/adv_100/nips17/9.png",
+    "target_path": "resources/images_100/target_images/1/9.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Two dogs play tug with a yellow toy in the snow beside a wooden fence.",
+    "adv_description": "A wet dog shakes vigorously beside a wooden wall, spraying water and snow.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/90",
+    "adv_path": "final_results/adv_100/nips17/90.png",
+    "target_path": "resources/images_100/target_images/1/90.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A low-angle view of a city street with traffic, trees, buildings, and a prominent traffic signal.",
+    "adv_description": "Surreal layered city street reflection with cars, traffic signs, and warm golden tones.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/91",
+    "adv_path": "final_results/adv_100/nips17/91.png",
+    "target_path": "resources/images_100/target_images/1/91.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Visitors watch elephants in a zoo enclosure with rocky walls and scattered hay.",
+    "adv_description": "Elephants graze in a lush, fenced zoo enclosure surrounded by greenery and rocks.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/92",
+    "adv_path": "final_results/adv_100/nips17/92.png",
+    "target_path": "resources/images_100/target_images/1/92.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Sheep graze on a grassy coastal field overlooking a calm beach and ocean.",
+    "adv_description": "Sheep graze near a red torii gate in a surreal, sunset-lit landscape.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/93",
+    "adv_path": "final_results/adv_100/nips17/93.png",
+    "target_path": "resources/images_100/target_images/1/93.jpg",
+    "model": "gpt-5.5",
+    "target_description": "An elephant and rhinoceros graze near a wetland in a sunlit African savanna.",
+    "adv_description": "An elephant stands in misty grassland beside reflective water at sunrise.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/94",
+    "adv_path": "final_results/adv_100/nips17/94.png",
+    "target_path": "resources/images_100/target_images/1/94.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A woolly sheep stands on a grassy hillside with trees in the background.",
+    "adv_description": "A flock of sheep grazes in a dimly lit pasture at sunset.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/95",
+    "adv_path": "final_results/adv_100/nips17/95.png",
+    "target_path": "resources/images_100/target_images/1/95.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A white ferret peeks from under a blanket while resting on a TV remote.",
+    "adv_description": "A curious ferret peeks out from between several TV remote controls.",
+    "similarity": 0.8,
+    "success": true
+  },
+  {
+    "name": "nips17/96",
+    "adv_path": "final_results/adv_100/nips17/96.png",
+    "target_path": "resources/images_100/target_images/1/96.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Sheep graze in a misty field at sunrise beneath silhouetted tree branches.",
+    "adv_description": "Sheep graze in a misty dawn field, layered with reflections of water, trees, and a red boat.",
+    "similarity": 0.9,
+    "success": true
+  },
+  {
+    "name": "nips17/97",
+    "adv_path": "final_results/adv_100/nips17/97.png",
+    "target_path": "resources/images_100/target_images/1/97.jpg",
+    "model": "gpt-5.5",
+    "target_description": "Three young men play a motion-controlled video game in a living room.",
+    "adv_description": "Three friends relax indoors beside a large clock and red ottoman.",
+    "similarity": 0.5,
+    "success": true
+  },
+  {
+    "name": "nips17/98",
+    "adv_path": "final_results/adv_100/nips17/98.png",
+    "target_path": "resources/images_100/target_images/1/98.jpg",
+    "model": "gpt-5.5",
+    "target_description": "People gather outside Pyongyang Station, with a large clock and Korean characters on the facade.",
+    "adv_description": "Two illuminated circular murals glow in a busy nighttime urban plaza with people nearby.",
+    "similarity": 0.3,
+    "success": false
+  },
+  {
+    "name": "nips17/99",
+    "adv_path": "final_results/adv_100/nips17/99.png",
+    "target_path": "resources/images_100/target_images/1/99.jpg",
+    "model": "gpt-5.5",
+    "target_description": "A cow stands beside a street stall selling bottled drinks in a busy outdoor market.",
+    "adv_description": "Two cows stand beside a street vendor’s goods in a busy market.",
+    "similarity": 0.8,
+    "success": true
+  }
+]
