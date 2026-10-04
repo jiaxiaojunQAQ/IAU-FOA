@@ -23,14 +23,29 @@ from omegaconf import OmegaConf
 from PIL import Image
 from torchvision import transforms
 
-from iau_foa.alignment import AlignmentLoss, EnsembleExtractor
 from iau_foa.attack import attack
 from iau_foa.resize import patch_interpolate
-from iau_foa.surrogates import build_surrogates
+from surrogates import (
+    ClipB16FeatureExtractor,
+    ClipB32FeatureExtractor,
+    ClipLaionFeatureExtractor,
+    DINOv2FeatureExtractor,
+    EnsembleFeatureExtractor,
+    EnsembleFeatureLoss,
+    InternVL3_1B_FeatureExtractor,
+)
 
 logger = logging.getLogger("iau_foa")
 
 IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg")
+
+SURROGATES = {
+    "B16": ClipB16FeatureExtractor,
+    "B32": ClipB32FeatureExtractor,
+    "Laion": ClipLaionFeatureExtractor,
+    "InternVL3_1B": InternVL3_1B_FeatureExtractor,
+    "DINOv2_Base": DINOv2FeatureExtractor,
+}
 
 
 def setup_logging(log_file):
@@ -56,6 +71,15 @@ def set_deterministic():
     # TF32 costs ~1e-3 relative precision in matmul, which the resize cannot afford.
     torch.backends.cuda.matmul.allow_tf32 = False
     patch_interpolate()
+
+
+def build_surrogates(names, device):
+    models = []
+    for name in names:
+        if name not in SURROGATES:
+            raise ValueError(f"unknown surrogate: {name} (available: {list(SURROGATES)})")
+        models.append(SURROGATES[name]().eval().to(device).requires_grad_(False))
+    return models
 
 
 def list_pairs(clean_dir, target_dir):
@@ -107,8 +131,8 @@ def main():
 
     device = cfg.model.device
     surrogates = build_surrogates(cfg.model.surrogates, device)
-    extractor = EnsembleExtractor(surrogates, int(cfg.ot.num_centers))
-    loss_fn = AlignmentLoss(
+    extractor = EnsembleFeatureExtractor(surrogates, int(cfg.ot.num_centers))
+    loss_fn = EnsembleFeatureLoss(
         surrogates,
         num_centers=int(cfg.ot.num_centers),
         local_weight=float(cfg.ot.local_weight),

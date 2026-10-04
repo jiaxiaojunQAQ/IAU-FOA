@@ -1,4 +1,5 @@
-"""Dual-granularity feature alignment over a surrogate ensemble.
+"""Base class of the surrogate encoders, and the dual-granularity feature alignment
+over a surrogate ensemble.
 
 Per surrogate, the alignment score between the adversarial and the target image is
 
@@ -13,8 +14,47 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 from torch import nn
+from torchvision import transforms
 
-from .kmeans import kmeans
+from iau_foa.kmeans import kmeans
+from iau_foa.resize import matmul_resize
+
+CLIP_MEAN = (0.48145466, 0.4578275, 0.40821073)
+CLIP_STD = (0.26862954, 0.26130258, 0.27577711)
+
+
+class BaseFeatureExtractor(nn.Module):
+    """A surrogate vision encoder.
+
+    Maps a pixel-space image (B,3,H,W) in [0,255] to
+      global feature: (B, D)     L2-normalised [CLS] token
+      local features: (B, N, D)  patch tokens
+    """
+
+    input_size = 224
+
+    def __init__(self):
+        super().__init__()
+        # All surrogates, DINOv2 included, use the CLIP statistics.
+        self.normalize = transforms.Normalize(CLIP_MEAN, CLIP_STD)
+
+    def preprocess(self, x):
+        size = (self.input_size, self.input_size)
+        x = matmul_resize(x, size, "bicubic", True)
+        x = torch.clamp(x, 0.0, 255.0) / 255.0
+        return self.normalize(x)
+
+    def tokens(self, x):
+        """(B, 1+N, D) last hidden state, [CLS] first."""
+        raise NotImplementedError
+
+    def global_local_features(self, x):
+        features = self.tokens(x)
+        global_feature = features[:, 0, :]
+        global_feature = global_feature / global_feature.norm(dim=1, keepdim=True)
+        local_feature = features[:, 1:, :]
+        local_feature = local_feature / local_feature.norm(dim=1, keepdim=True)
+        return global_feature.float(), local_feature.float()
 
 
 def cluster_centers(tokens, num_centers):
@@ -27,7 +67,7 @@ def cluster_centers(tokens, num_centers):
     return kmeans(tokens, int(num_centers))
 
 
-class EnsembleExtractor(nn.Module):
+class EnsembleFeatureExtractor(nn.Module):
     """Returns, per surrogate, the global feature and the K local cluster centres."""
 
     def __init__(self, surrogates, num_centers):
@@ -44,7 +84,7 @@ class EnsembleExtractor(nn.Module):
         return features, features_local
 
 
-class AlignmentLoss(nn.Module):
+class EnsembleFeatureLoss(nn.Module):
     """Alignment score (to be maximised) between adversarial and target features.
 
     Args:

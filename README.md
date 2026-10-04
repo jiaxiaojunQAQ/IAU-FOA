@@ -72,9 +72,9 @@ a random crop of the target image, over an ensemble of surrogate encoders.
 
 | Component | What it does | Code |
 |---|---|---|
-| Dual-granularity alignment | Cosine similarity of the `[CLS]` features, plus optimal transport between `K` K-Means centres of the patch tokens | `iau_foa/alignment.py` |
-| Adaptive unbalanced OT | Relaxes the transport marginals per cluster according to its matching confidence, so weakly matched clusters are not force-aligned | `AlignmentLoss.sinkhorn` |
-| Dynamic ensemble weighting | Re-weights the surrogates at every evaluation from the ratio of current to previous alignment score | `AlignmentLoss.forward` |
+| Dual-granularity alignment | Cosine similarity of the `[CLS]` features, plus optimal transport between `K` K-Means centres of the patch tokens | `surrogates/FeatureExtractors/Base.py` |
+| Adaptive unbalanced OT | Relaxes the transport marginals per cluster according to its matching confidence, so weakly matched clusters are not force-aligned | `EnsembleFeatureLoss.sinkhorn` |
+| Dynamic ensemble weighting | Re-weights the surrogates at every evaluation from the ratio of current to previous alignment score | `EnsembleFeatureLoss.forward` |
 | Visual-invariance augmentation (VIA) | Averages the gradient over intensity scales `{1/4, 1/2, 1, 2, 4}`, each with a random per-channel gain | `iau_foa/attack.py` |
 
 Surrogates: CLIP ViT-B/16, CLIP ViT-B/32, LAION CLIP ViT-G/14, InternVL3-1B, DINOv2-Base.
@@ -218,10 +218,12 @@ evaluate.py              evaluate on closed-source MLLMs
 config/                  attack configurations (100 and 1,000 images)
 iau_foa/
   attack.py              attack loop and visual-invariance augmentation
-  alignment.py           dual-granularity alignment, adaptive unbalanced OT, dynamic weighting
   kmeans.py              differentiable K-Means
-  surrogates.py          surrogate vision encoders
   resize.py              deterministic resize as matrix products
+surrogates/FeatureExtractors/
+  Base.py                dual-granularity alignment, adaptive unbalanced OT, dynamic weighting
+  ClipB16.py  ClipB32.py  ClipLaion.py  InternVL3_1B.py  DINOv2_Base.py
+                         one surrogate vision encoder per file
 scripts/run_sharded.sh   multi-GPU launcher
 resources/               clean and target images
 final_results/           released adversarial images and evaluation records
