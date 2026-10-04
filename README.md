@@ -222,7 +222,7 @@ iau_foa/
 surrogates/FeatureExtractors/
   Base.py                EnsembleFeatureExtractor_ot and EnsembleFeatureLoss_OT_foa_attack:
                          dual-granularity alignment, adaptive unbalanced OT, dynamic weighting
-  ClipB16.py  ClipB32.py  ClipLaion.py  InternVL3_1B.py  DINOv2_Base.py  ClipL336.py
+  ClipB16.py  ClipB32.py  ClipLaion.py  InternVL3_1B.py  DINOv2_Base.py
                          surrogate vision encoders
 scripts/run_sharded.sh   multi-GPU launcher
 resources/               clean and target images
