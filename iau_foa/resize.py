@@ -90,24 +90,44 @@ def matmul_resize(x, out_hw, mode="bicubic", antialias=True):
     return Ah @ x @ Aw.T
 
 
-def patch_interpolate():
-    """Route bicubic / antialiased `F.interpolate` calls on CUDA through `matmul_resize`.
+def patch_resize():
+    """Route bicubic / bilinear resizing of CUDA tensors through `matmul_resize`.
 
-    The attack itself calls `matmul_resize` directly; this covers interpolation
-    inside the surrogate models (DINOv2 resizes its position embeddings bicubically).
-    Call forms without an explicit (H, W) size fall back to the CPU, which is
-    deterministic as well.
+    Covers `torchvision.transforms.functional.resize` (the `transforms.Resize` of the
+    surrogate preprocessing) and bicubic / antialiased `F.interpolate` (DINOv2 resizes
+    its position embeddings bicubically). Call forms without an explicit (H, W)
+    size fall back to the CPU, which is deterministic as well.
     """
-    native = F.interpolate
+    import torchvision.transforms.functional as TVF
+
+    native_interpolate = F.interpolate
+    native_resize = TVF.resize
+
+    def resize(img, size, interpolation=TVF.InterpolationMode.BILINEAR, max_size=None, antialias=True):
+        mode = getattr(interpolation, "value", str(interpolation)).lower()
+        if not (torch.is_tensor(img) and img.is_cuda) or mode not in ("bilinear", "bicubic"):
+            return native_resize(img, size, interpolation, max_size, antialias)
+        h, w = img.shape[-2], img.shape[-1]
+        if isinstance(size, (list, tuple)) and len(size) == 2:
+            out_hw = (int(size[0]), int(size[1]))
+        elif h == w and max_size is None:
+            s = int(size[0]) if isinstance(size, (list, tuple)) else int(size)
+            out_hw = (s, s)
+        else:
+            return native_resize(img.cpu(), size, interpolation, max_size, antialias).to(img.device)
+        if img.dim() == 3:
+            return matmul_resize(img.unsqueeze(0), out_hw, mode, bool(antialias)).squeeze(0)
+        return matmul_resize(img, out_hw, mode, bool(antialias))
 
     def interpolate(inp, *args, **kwargs):
         mode = str(kwargs.get("mode", args[2] if len(args) > 2 else "nearest"))
         antialias = bool(kwargs.get("antialias", False))
         if not (torch.is_tensor(inp) and inp.is_cuda and ("cubic" in mode or antialias)):
-            return native(inp, *args, **kwargs)
+            return native_interpolate(inp, *args, **kwargs)
         size = kwargs.get("size", args[0] if args else None)
         if isinstance(size, (list, tuple)) and len(size) == 2 and mode in ("bilinear", "bicubic"):
             return matmul_resize(inp, (int(size[0]), int(size[1])), mode, antialias)
-        return native(inp.cpu(), *args, **kwargs).to(inp.device)
+        return native_interpolate(inp.cpu(), *args, **kwargs).to(inp.device)
 
+    TVF.resize = resize
     F.interpolate = interpolate

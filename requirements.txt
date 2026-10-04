@@ -2,6 +2,9 @@
 torch==2.7.0
 torchvision==0.22.0
 transformers==4.57.3
+kmeans-pytorch @ git+https://github.com/subhadarship/kmeans_pytorch@f7f36bd1cb4e3a761d73d584866d0a9c6b4d2805
+numba==0.60.0
+tqdm
 numpy==1.26.4
 pillow==11.1.0
 omegaconf==2.3.0

@@ -24,14 +24,14 @@ from PIL import Image
 from torchvision import transforms
 
 from iau_foa.attack import attack
-from iau_foa.resize import patch_interpolate
+from iau_foa.resize import patch_resize
 from surrogates import (
     ClipB16FeatureExtractor,
     ClipB32FeatureExtractor,
     ClipLaionFeatureExtractor,
     DINOv2FeatureExtractor,
-    EnsembleFeatureExtractor,
-    EnsembleFeatureLoss,
+    EnsembleFeatureExtractor_ot,
+    EnsembleFeatureLoss_OT_foa_attack,
     InternVL3_1B_FeatureExtractor,
 )
 
@@ -70,7 +70,7 @@ def set_deterministic():
     torch.use_deterministic_algorithms(True)
     # TF32 costs ~1e-3 relative precision in matmul, which the resize cannot afford.
     torch.backends.cuda.matmul.allow_tf32 = False
-    patch_interpolate()
+    patch_resize()
 
 
 def build_surrogates(names, device):
@@ -131,13 +131,16 @@ def main():
 
     device = cfg.model.device
     surrogates = build_surrogates(cfg.model.surrogates, device)
-    extractor = EnsembleFeatureExtractor(surrogates, int(cfg.ot.num_centers))
-    loss_fn = EnsembleFeatureLoss(
+    extractor = EnsembleFeatureExtractor_ot(surrogates, cluster_number=int(cfg.ot.num_centers))
+    loss_fn = EnsembleFeatureLoss_OT_foa_attack(
         surrogates,
-        num_centers=int(cfg.ot.num_centers),
+        cluster_number=int(cfg.ot.num_centers),
         local_weight=float(cfg.ot.local_weight),
-        rho=float(cfg.ot.rho),
-        gamma=float(cfg.ot.gamma),
+        uot_reg_m=float(cfg.ot.rho),
+        uot_normalize=True,
+        uot_adaptive=True,
+        uot_adaptive_gamma=float(cfg.ot.gamma),
+        uot_adaptive_norm=True,
         eps=float(cfg.ot.eps),
     )
 

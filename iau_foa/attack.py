@@ -48,12 +48,12 @@ def attack(cfg, extractor, loss_fn, image, target, tag=""):
     steps = int(cfg.attack.steps)
     alpha, epsilon = cfg.attack.alpha, cfg.attack.epsilon
 
-    loss_fn.reset()
+    loss_fn.previous_loss_list = []      # dynamic-weighting state, reset per image
     delta = torch.zeros_like(image, requires_grad=True)
 
     for step in range(steps):
         with torch.no_grad():
-            loss_fn.set_target(random_resized_crop(target, size, scale))
+            loss_fn.set_ground_truth(random_resized_crop(target, size, scale))
 
         grad = torch.zeros_like(delta)
         local_sim, global_sim, n_ok = 0.0, 0.0, 0
